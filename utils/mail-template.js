@@ -44,11 +44,8 @@ const HTML_TEMPLATE = ({ dept_name, camera, alarm_type }, date, time) => {
               <div class="email-body">
                 <p>A safety violation has been identified within your organization, please find the attached screenshot for your reference.</p>
                 <h4>Incident Details:</h4>
-                <p>Date of Violation: ${date}</p>
-                <p>Time of Violation: ${time}</p>
-                <p>Department: ${dept_name}</p>
+                <p>Date and Time of Violation: ${date} ${time}</p>
                 <p>Camera: ${camera}</p>
-                <p>Violation Description: The staff is not wearing the safety helmet</p>
                 <p>Please check the dashboard for further information.</p>
               </div>
               <div class="email-footer">

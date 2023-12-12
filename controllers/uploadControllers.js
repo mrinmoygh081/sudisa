@@ -59,7 +59,7 @@ exports.saveImgToDB = async (req, res) => {
       let mailDetails = {
         from: "safety.sudisafoundry@gmail.com",
         to: result[0]?.emails,
-        subject: "Safety Violation",
+        subject: "The staff is not wearing the safety helmet",
         html: HTML_TEMPLATE(req.body, date, time),
         attachments: [
           {
@@ -72,7 +72,7 @@ exports.saveImgToDB = async (req, res) => {
         if (!err) {
           console.log("Error Occurs", err);
         } else {
-          console.log("Email sent successfully", data);
+          console.log("Email sent successfully");
         }
       });
     } else {
