@@ -190,3 +190,97 @@ exports.updateNewPw = async (req, res) => {
     resSend(res, false, 400, "Error", error, null);
   }
 };
+
+// add User
+exports.addUserHandler = async (req, res) => {
+  const { username, email, password, name, role, currentUser } = req.body;
+  try {
+    let sql = `SELECT * FROM auth WHERE username= '${username}' OR email='${email}' and isActive = 'y'`;
+
+    const result = await query({
+      query: sql,
+      values: [],
+    });
+    if (result && result.length === 0) {
+      // check if username has admin role or not
+      let sql3 = `SELECT * FROM auth WHERE username= '${currentUser}' and isActive = 'y'`;
+
+      const res3 = await query({
+        query: sql3,
+        values: [],
+      });
+      if (res3 && res3.length > 0 && res3[0].role === "admin") {
+        //hashed password
+        let salt = await bcrypt.genSalt(10);
+        let hashedPassword = await bcrypt.hash(password, salt);
+        // Add User to DB
+        let sql2 = `INSERT INTO auth(username, email, password, name, role, isActive) 
+        VALUES ('${username}','${email}','${hashedPassword}','${name}','${role}','y')`;
+        const result2 = await query({
+          query: sql2,
+          values: [],
+        });
+        resSend(res, true, 200, "New User Added!", result2, null);
+      } else {
+        resSend(
+          res,
+          false,
+          200,
+          "You don't have the access to add new user!",
+          null,
+          null
+        );
+      }
+    } else {
+      resSend(
+        res,
+        false,
+        200,
+        "USER ID or Email Id is already exists!",
+        null,
+        null
+      );
+    }
+  } catch (error) {
+    console.log(error);
+    resSend(res, false, 400, "Error", error, null);
+  }
+};
+
+// all users
+exports.allUsers = async (req, res) => {
+  const { currentUser } = req.body;
+  try {
+    let sql3 = `SELECT * FROM auth WHERE username= '${currentUser}' and isActive = 'y'`;
+    const res3 = await query({
+      query: sql3,
+      values: [],
+    });
+    if (res3 && res3.length > 0 && res3[0].role === "admin") {
+      let sql = `SELECT * FROM auth`;
+
+      const result = await query({
+        query: sql,
+        values: [],
+      });
+      if (result && result.length > 0) {
+        // User exits, check passwords
+        resSend(res, true, 200, "auth list", result, null);
+      } else {
+        resSend(res, false, 200, "No Record Found!", result, null);
+      }
+    } else {
+      resSend(
+        res,
+        false,
+        200,
+        "You don't have the access to add new user!",
+        null,
+        null
+      );
+    }
+  } catch (error) {
+    console.log(error);
+    resSend(res, false, 400, "Error", error, null);
+  }
+};
