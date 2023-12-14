@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 12, 2023 at 11:47 AM
+-- Generation Time: Dec 14, 2023 at 02:02 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.1.17
 
@@ -429,10 +429,11 @@ INSERT INTO `alarm` (`alarm_id`, `dept_id`, `camera`, `alarm_type`, `image`, `da
 
 CREATE TABLE `auth` (
   `auth_id` int(11) NOT NULL,
-  `username` varchar(55) NOT NULL,
+  `username` varchar(45) NOT NULL,
   `email` varchar(65) NOT NULL,
   `password` varchar(255) NOT NULL,
   `name` varchar(55) NOT NULL,
+  `role` varchar(10) NOT NULL,
   `isActive` varchar(1) NOT NULL,
   `datetime` datetime NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
@@ -441,8 +442,8 @@ CREATE TABLE `auth` (
 -- Dumping data for table `auth`
 --
 
-INSERT INTO `auth` (`auth_id`, `username`, `email`, `password`, `name`, `isActive`, `datetime`) VALUES
-(1, 'admin', 'mrinmoyghosh102@gmail.com', '$2a$12$Ee5GNWNDXd42lE4gGv2oWOBNomTbMYmthn.0rsCFFJKHS4PqTFUOO', 'Mrinmoy Ghosh', 'y', '2023-12-07 12:42:55');
+INSERT INTO `auth` (`auth_id`, `username`, `email`, `password`, `name`, `role`, `isActive`, `datetime`) VALUES
+(1, 'admin', 'mrinmoyghosh102@gmail.com', '$2a$12$Ee5GNWNDXd42lE4gGv2oWOBNomTbMYmthn.0rsCFFJKHS4PqTFUOO', 'Mrinmoy Ghosh', 'admin', 'y', '2023-12-07 12:42:55');
 
 -- --------------------------------------------------------
 
@@ -525,7 +526,7 @@ ALTER TABLE `alarm`
 -- AUTO_INCREMENT for table `auth`
 --
 ALTER TABLE `auth`
-  MODIFY `auth_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `auth_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `depts`
