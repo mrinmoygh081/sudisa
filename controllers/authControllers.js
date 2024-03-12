@@ -16,7 +16,7 @@ const generateToken = (id) => {
 exports.loginHandler = async (req, res) => {
   const { username, password } = req.body;
   try {
-    let sql = `SELECT username, password, name FROM auth WHERE username= '${username}' and isActive = 'y'`;
+    let sql = `SELECT username, password, name, role FROM auth WHERE username= '${username}' and isActive = 'y'`;
 
     const result = await query({
       query: sql,
@@ -43,6 +43,7 @@ exports.loginHandler = async (req, res) => {
 //  ForgetHandler
 exports.forgetHandler = async (req, res) => {
   const { email } = req.body;
+  console.log(email);
   try {
     let sql = `SELECT * FROM auth WHERE email= '${email}' AND isActive = 'y'`;
 
@@ -53,7 +54,7 @@ exports.forgetHandler = async (req, res) => {
 
     // generate OTP
     const otp = Math.round(Math.random() * 1000000);
-
+    console.log(result);
     if (result && result.length > 0) {
       // Store or Update in DB
       let sql2 = `SELECT * FROM otps WHERE email= '${email}'`;
@@ -209,6 +210,7 @@ exports.addUserHandler = async (req, res) => {
         query: sql3,
         values: [],
       });
+      console.log(res3);
       if (res3 && res3.length > 0 && res3[0].role === "admin") {
         //hashed password
         let salt = await bcrypt.genSalt(10);
@@ -250,6 +252,7 @@ exports.addUserHandler = async (req, res) => {
 // all users
 exports.allUsers = async (req, res) => {
   const { currentUser } = req.body;
+  console.log("Heyyyyyyy i am currect user........", req.body.currentUser);
   try {
     let sql3 = `SELECT * FROM auth WHERE username= '${currentUser}' and isActive = 'y'`;
     const res3 = await query({

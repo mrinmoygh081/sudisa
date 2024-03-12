@@ -8,6 +8,7 @@ const app = express();
 const authRoutes = require("./routes/authRoutes");
 const masterRoutes = require("./routes/masterRoutes");
 const uploadRoutes = require("./routes/uploadRoutes");
+const { cronJobStart } = require("./cron/cron");
 
 // settings
 app.use(express.json());
@@ -19,6 +20,9 @@ app.use("/uploads", express.static("uploads"));
 app.use("/api/v1/auth", authRoutes);
 app.use("/api/v1/master", masterRoutes);
 app.use("/api/v1/upload", uploadRoutes);
+
+// Cron Start
+cronJobStart();
 
 const PORT = process.env.PORT || 4000;
 app.listen(PORT, () => {

@@ -7,7 +7,8 @@ let transporter = nodemailer.createTransport({
   secure: false,
   auth: {
     user: "safety.sudisafoundry@gmail.com",
-    pass: "ebepjjgpxypkocdu",
+    // pass: "gpgr vsbf qxbs zive",
+    pass: "gpgr vsbf qxbs zive",
   },
 });
 

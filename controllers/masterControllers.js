@@ -109,3 +109,36 @@ exports.fetchAlerts = async (req, res) => {
     resSend(res, false, 200, "Send Start and end time", null, null);
   }
 };
+
+// POST /api/v1/master/user/edit
+exports.editUser = async (req, res) => {
+  const { dept_id, dept_name, emails, head_name } = req.body;
+  try {
+    let sql = `UPDATE depts SET dept_name = ?, emails=?, head_name=? WHERE dept_id = ?`;
+    const result = await query({
+      query: sql,
+      values: [dept_name, emails, head_name, dept_id],
+    });
+    resSend(res, true, 200, "Data Updated", result, null);
+  } catch (error) {
+    console.log(error);
+    resSend(res, false, 400, "Error", error, null);
+  }
+};
+
+// POST /api/v1/master/user/delete
+exports.deleteUser = async (req, res) => {
+  const { auth_id } = req.body;
+  console.log("user deleteeeee auth_id", req.body.auth_id);
+  try {
+    let sql = `DELETE FROM auth WHERE auth_id = ?`;
+    const result = await query({
+      query: sql,
+      values: [auth_id],
+    });
+    resSend(res, true, 200, "UserData Deleted", result, null);
+  } catch (error) {
+    console.log(error);
+    resSend(res, false, 400, "Error", error, null);
+  }
+};
