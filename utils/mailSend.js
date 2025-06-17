@@ -22,7 +22,10 @@ let transporter = nodemailer.createTransport({
 
 const SENDMAIL = async (mailDetails, callback) => {
   try {
+    // console.log("hey i am  mailDetails.....", mailDetails);
+    // console.log("hey i am  callbacksss.....", callback);
     const info = await transporter.sendMail(mailDetails);
+    console.log("hey i am infooooooo", info);
     callback(info);
   } catch (error) {
     console.log(error);

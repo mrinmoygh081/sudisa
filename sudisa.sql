@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 14, 2023 at 02:02 PM
--- Server version: 10.4.28-MariaDB
--- PHP Version: 8.1.17
+-- Generation Time: Jun 17, 2025 at 01:48 PM
+-- Server version: 10.4.32-MariaDB
+-- PHP Version: 8.0.30
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -419,7 +419,49 @@ INSERT INTO `alarm` (`alarm_id`, `dept_id`, `camera`, `alarm_type`, `image`, `da
 (377, 34, 'Camera10', 'Warning', '1697016390386-frame25840533-7edf-444a-aff0-4d20c996dd6e.jpg', '2023-10-11T14:56:30.668Z'),
 (378, 32, 'Cam 1', 'Warning', '1696403194026-download.jpg', '2023-11-23T10:09:34.197Z'),
 (379, 32, 'Cam 1', 'Warning', '1696403194026-download.jpg', '2023-11-23T10:14:20.712Z'),
-(380, 32, 'Cam 1', 'Warning', '1700714732665-unnamed.png', '2023-11-23T10:15:44.480Z');
+(380, 32, 'Cam 1', 'Warning', '1700714732665-unnamed.png', '2023-11-23T10:15:44.480Z'),
+(381, 25, 'Camera10', 'Warn', '1696932759165-frameb7dcefc4-7047-4bc9-980f-b52b8a165265.jpg', '2024-03-05T13:06:12.324Z'),
+(382, 25, 'Camera10', 'Warn', '1696932759165-frameb7dcefc4-7047-4bc9-980f-b52b8a165265.jpg', '2024-03-05T13:07:09.545Z'),
+(383, 25, 'Camera10', 'Warn', '1696932759165-frameb7dcefc4-7047-4bc9-980f-b52b8a165265.jpg', '2024-03-05T13:32:12.779Z'),
+(384, 25, 'Camera10', 'Warn', '1696932759165-frameb7dcefc4-7047-4bc9-980f-b52b8a165265.jpg', '2024-03-05T13:44:35.026Z'),
+(385, 25, 'Camera10', 'Warn', '1696932759165-frameb7dcefc4-7047-4bc9-980f-b52b8a165265.jpg', '2024-03-07T12:01:04.957Z'),
+(386, 25, 'Camera10', 'Warn', '1696932759165-frameb7dcefc4-7047-4bc9-980f-b52b8a165265.jpg', '2024-03-07T12:16:56.141Z'),
+(387, 25, 'Camera10', 'Warn', '1696932759165-frameb7dcefc4-7047-4bc9-980f-b52b8a165265.jpg', '2024-03-07T12:20:15.531Z'),
+(388, 25, 'Camera10', 'Warn', '1696932759165-frameb7dcefc4-7047-4bc9-980f-b52b8a165265.jpg', '2024-03-07T12:20:34.399Z'),
+(389, 25, 'Camera10', 'Warn', '1696932759165-frameb7dcefc4-7047-4bc9-980f-b52b8a165265.jpg', '2024-03-07T12:20:51.886Z'),
+(390, 25, 'Camera10', 'Warn', '1696932759165-frameb7dcefc4-7047-4bc9-980f-b52b8a165265.jpg', '2024-03-07T12:22:16.451Z'),
+(391, 25, 'Camera10', 'Warn', '1696932759165-frameb7dcefc4-7047-4bc9-980f-b52b8a165265.jpg', '2024-03-07T12:22:31.328Z'),
+(392, 25, 'Camera10', 'Warn', '1696932759165-frameb7dcefc4-7047-4bc9-980f-b52b8a165265.jpg', '2024-03-07T12:25:14.627Z'),
+(393, 25, 'Camera10', 'Warn', '1696932759165-frameb7dcefc4-7047-4bc9-980f-b52b8a165265.jpg', '2024-03-07T12:30:35.453Z'),
+(394, 25, 'Camera10', 'Warn', '1696932759165-frameb7dcefc4-7047-4bc9-980f-b52b8a165265.jpg', '2024-03-07T12:33:18.932Z'),
+(395, 25, 'Camera10', 'Warn', '1696932759165-frameb7dcefc4-7047-4bc9-980f-b52b8a165265.jpg', '2024-03-07T12:34:59.636Z'),
+(396, 25, 'Camera10', 'Warn', '1696932759165-frameb7dcefc4-7047-4bc9-980f-b52b8a165265.jpg', '2024-03-07T12:38:22.492Z'),
+(397, 25, 'Camera10', 'Warn', '1696932759165-frameb7dcefc4-7047-4bc9-980f-b52b8a165265.jpg', '2024-03-07T12:41:20.323Z'),
+(398, 25, 'Camera10', 'Warn', '1696932759165-frameb7dcefc4-7047-4bc9-980f-b52b8a165265.jpg', '2024-03-07T12:41:47.973Z'),
+(399, 25, 'Camera10', 'Warn', '1696932759165-frameb7dcefc4-7047-4bc9-980f-b52b8a165265.jpg', '2024-03-07T12:42:29.697Z'),
+(400, 25, 'Camera10', 'Warn', '1696932759165-frameb7dcefc4-7047-4bc9-980f-b52b8a165265.jpg', '2024-03-07T12:50:26.922Z'),
+(401, 25, 'Camera10', 'Warn', '1696932759165-frameb7dcefc4-7047-4bc9-980f-b52b8a165265.jpg', '2024-03-07T12:51:06.734Z'),
+(402, 25, 'Camera10', 'Warn', '1696932759165-frameb7dcefc4-7047-4bc9-980f-b52b8a165265.jpg', '2024-03-08T10:24:10.671Z'),
+(403, 25, 'Camera10', 'Warn', '1696932759165-frameb7dcefc4-7047-4bc9-980f-b52b8a165265.jpg', '2024-03-08T10:27:48.476Z'),
+(404, 25, 'Camera10', 'Warn', '1696932759165-frameb7dcefc4-7047-4bc9-980f-b52b8a165265.jpg', '2024-03-08T10:29:25.493Z'),
+(405, 25, 'Camera10', 'Warn', '1696932759165-frameb7dcefc4-7047-4bc9-980f-b52b8a165265.jpg', '2024-03-08T10:29:47.821Z'),
+(406, 25, 'Camera10', 'Warn', '1696932759165-frameb7dcefc4-7047-4bc9-980f-b52b8a165265.jpg', '2024-03-08T10:34:00.159Z'),
+(407, 25, 'Camera10', 'Warn', '1696932759165-frameb7dcefc4-7047-4bc9-980f-b52b8a165265.jpg', '2024-03-08T10:37:16.031Z'),
+(408, 25, 'Camera10', 'Warn', '1696932759165-frameb7dcefc4-7047-4bc9-980f-b52b8a165265.jpg', '2024-03-08T10:52:34.366Z'),
+(409, 25, 'Camera10', 'Warn', '1696932759165-frameb7dcefc4-7047-4bc9-980f-b52b8a165265.jpg', '2024-03-08T10:54:12.503Z');
+INSERT INTO `alarm` (`alarm_id`, `dept_id`, `camera`, `alarm_type`, `image`, `datetime`) VALUES
+(410, 25, 'Camera10', 'Warn', '1696932759165-frameb7dcefc4-7047-4bc9-980f-b52b8a165265.jpg', '2024-03-08T10:55:16.202Z'),
+(411, 25, 'Camera10', 'Warn', '1696932759165-frameb7dcefc4-7047-4bc9-980f-b52b8a165265.jpg', '2024-03-08T10:55:42.567Z'),
+(412, 25, 'Camera10', 'Warn', '1696932759165-frameb7dcefc4-7047-4bc9-980f-b52b8a165265.jpg', '2024-03-08T10:58:44.010Z'),
+(413, 25, 'Camera10', 'Warn', '1696932759165-frameb7dcefc4-7047-4bc9-980f-b52b8a165265.jpg', '2024-03-08T11:00:26.787Z'),
+(414, 25, 'Camera10', 'Warn', '1696932759165-frameb7dcefc4-7047-4bc9-980f-b52b8a165265.jpg', '2024-03-08T11:01:29.006Z'),
+(415, 25, 'Camera10', 'Warn', '1696932759165-frameb7dcefc4-7047-4bc9-980f-b52b8a165265.jpg', '2024-03-08T11:14:26.611Z'),
+(416, 25, 'Camera10', 'Warn', '1696932759165-frameb7dcefc4-7047-4bc9-980f-b52b8a165265.jpg', '2024-03-08T11:34:28.621Z'),
+(417, 25, 'Camera10', 'Warn', '1696932759165-frameb7dcefc4-7047-4bc9-980f-b52b8a165265.jpg', '2024-03-08T11:35:51.401Z'),
+(418, 25, 'Camera10', 'Warn', '1696932759165-frameb7dcefc4-7047-4bc9-980f-b52b8a165265.jpg', '2024-03-11T10:44:22.462Z'),
+(419, 25, 'Camera10', 'Warn', '1696932759165-frameb7dcefc4-7047-4bc9-980f-b52b8a165265.jpg', '2024-03-11T10:48:57.750Z'),
+(420, 25, 'Camera10', 'Warn', '1696932759165-frameb7dcefc4-7047-4bc9-980f-b52b8a165265.jpg', '2024-03-11T15:11:44.332Z'),
+(421, 25, 'Camera10', 'Warn', '1696932759165-frameb7dcefc4-7047-4bc9-980f-b52b8a165265.jpg', '2024-03-12T11:22:58.428Z');
 
 -- --------------------------------------------------------
 
@@ -443,7 +485,14 @@ CREATE TABLE `auth` (
 --
 
 INSERT INTO `auth` (`auth_id`, `username`, `email`, `password`, `name`, `role`, `isActive`, `datetime`) VALUES
-(1, 'admin', 'mrinmoyghosh102@gmail.com', '$2a$12$Ee5GNWNDXd42lE4gGv2oWOBNomTbMYmthn.0rsCFFJKHS4PqTFUOO', 'Mrinmoy Ghosh', 'admin', 'y', '2023-12-07 12:42:55');
+(8, 'upasana', 'upasanabharti145@gmail.com', '$2a$12$Xhx5BWSM54zFvfwCvhglQ.gqOG59TLfd9CqOir8fKo.yPQ8fG4K7O', 'Upasana Bharti', 'staff', 'y', '2023-12-19 13:45:45'),
+(9, 'upasana', 'upasanabharti111@gmail.com', '123', 'Upasana145', 'admin', 'Y', '2023-12-19 15:12:21'),
+(10, 'ddd', 's@gmail.com', '123', 'Uptttttt', 'admin', 'Y', '2023-12-19 15:14:06'),
+(11, '[value-2]', '[value-3]', '[value-4]', '[value-5]', '[value-6]', '[', '0000-00-00 00:00:00'),
+(12, 'abhinitt', 'abhini564@gmail.com', '12345', 'abhinit', 'admin', 'Y', '2023-12-19 15:21:23'),
+(14, 'UB', 'UB@', '123', 'Cardiology', 'admin', 'Y', '2023-12-19 15:47:01'),
+(16, 'UB', 'UB@', '123yyyyy', 'Cardiology', 'admin', 'N', '2023-12-19 15:49:14'),
+(17, 'admin', 'safety.sudisafoundry@gmail.com', '$2a$10$Qjf/p4iqzf1D79hpXJsM5OZeLfPUFSAPKeoxHUFiW3rZCs3z1DiDO', 'SUDISA', 'admin', 'y', '2024-03-12 12:37:42');
 
 -- --------------------------------------------------------
 
@@ -463,13 +512,40 @@ CREATE TABLE `depts` (
 --
 
 INSERT INTO `depts` (`dept_id`, `dept_name`, `emails`, `head_name`) VALUES
-(25, 'System', 'mrinmoygh081@gmail.com', 'Mrinmoy Ghosh'),
+(25, 'Systemsss', 'upasanabharti145@gmail.com', 'Mrinmoy Ghosh'),
 (32, 'IT', 'upasanabharti145@gmail.com,upasanabharti146@gmail.com,uuupa@gmail.com,qqqq@gmail.com', 'Mrinmoy'),
-(34, 'Manufacturing', 'upasanabharti145@gmail.com', 'Upasana'),
 (35, 'DCGIT', 'rohit123sinha456@gmail.com', 'Saroj Kumar'),
-(36, 'abc', 'xyz@gmail.com', 'xyz'),
-(37, 'abc', '', 'xyz'),
-(38, 'abc', 'qq', 'qwe');
+(40, 'hii', 'ria@gmail.com', 'ii'),
+(41, 'hhh', 'upasana123@gmail.com', 'qwe');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `mail_log`
+--
+
+CREATE TABLE `mail_log` (
+  `id` int(11) NOT NULL,
+  `body` varchar(1024) NOT NULL,
+  `emails` varchar(55) NOT NULL,
+  `is_sent` int(11) NOT NULL COMMENT '0 => mail not sent\r\n1 => mail sent\r\n2 => Mail in QUEUE',
+  `datetime` varchar(30) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `mail_log`
+--
+
+INSERT INTO `mail_log` (`id`, `body`, `emails`, `is_sent`, `datetime`) VALUES
+(10, '{\"dept_name\":\"System\",\"camera\":\"Camera10\",\"image\":\"1696932759165-frameb7dcefc4-7047-4bc9-980f-b52b8a165265.jpg\",\"alarm_type\":\"Warn\"}', 'upasanabharti145@gmail.com', 0, '2024-03-07T12:42:29.697Z'),
+(11, '{\"dept_name\":\"System\",\"camera\":\"Camera10\",\"image\":\"1696932759165-frameb7dcefc4-7047-4bc9-980f-b52b8a165265.jpg\",\"alarm_type\":\"Warn\"}', '\"upasanabharti145@gmail.com\"', 2, '2024-03-07T12:50:26.922Z'),
+(12, '{\"dept_name\":\"System\",\"camera\":\"Camera10\",\"image\":\"1696932759165-frameb7dcefc4-7047-4bc9-980f-b52b8a165265.jpg\",\"alarm_type\":\"Warn\"}', '\"upasanabharti145@gmail.com\"', 2, '2024-03-07T12:51:06.734Z'),
+(13, '{\"dept_name\":\"System\",\"camera\":\"Camera10\",\"image\":\"1696932759165-frameb7dcefc4-7047-4bc9-980f-b52b8a165265.jpg\",\"alarm_type\":\"Warn\"}', '\"upasanabharti145@gmail.com, ria@gmail.com\"', 2, '2024-03-08T10:24:10.671Z'),
+(14, '{\"dept_name\":\"System\",\"camera\":\"Camera10\",\"image\":\"1696932759165-frameb7dcefc4-7047-4bc9-980f-b52b8a165265.jpg\",\"alarm_type\":\"Warn\"}', '\"upasanabharti145@gmail.com, ria@gmail.com\"', 1, '2024-03-08T10:27:48.476Z'),
+(29, '{\"dept_name\":\"System\",\"camera\":\"Camera10\",\"image\":\"1696932759165-frameb7dcefc4-7047-4bc9-980f-b52b8a165265.jpg\",\"alarm_type\":\"Warn\"}', '\"upasanabharti145@gmail.com\"', 2, '2024-03-11T10:44:22.462Z'),
+(30, '{\"dept_name\":\"System\",\"camera\":\"Camera10\",\"image\":\"1696932759165-frameb7dcefc4-7047-4bc9-980f-b52b8a165265.jpg\",\"alarm_type\":\"Warn\"}', '\"upasanabharti145@gmail.com\"', 2, '2024-03-11T10:48:57.750Z'),
+(31, '{\"dept_name\":\"System\",\"camera\":\"Camera10\",\"image\":\"1696932759165-frameb7dcefc4-7047-4bc9-980f-b52b8a165265.jpg\",\"alarm_type\":\"Warn\"}', '\"upasanabharti145@gmail.com\"', 2, '2024-03-11T15:11:44.332Z'),
+(32, '{\"dept_name\":\"System\",\"camera\":\"Camera10\",\"image\":\"1696932759165-frameb7dcefc4-7047-4bc9-980f-b52b8a165265.jpg\",\"alarm_type\":\"Warn\"}', '\"upasanabharti145@gmail.com\"', 2, '2024-03-12T11:22:58.428Z');
 
 -- --------------------------------------------------------
 
@@ -507,6 +583,12 @@ ALTER TABLE `depts`
   ADD PRIMARY KEY (`dept_id`);
 
 --
+-- Indexes for table `mail_log`
+--
+ALTER TABLE `mail_log`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `otps`
 --
 ALTER TABLE `otps`
@@ -520,25 +602,31 @@ ALTER TABLE `otps`
 -- AUTO_INCREMENT for table `alarm`
 --
 ALTER TABLE `alarm`
-  MODIFY `alarm_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=381;
+  MODIFY `alarm_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=422;
 
 --
 -- AUTO_INCREMENT for table `auth`
 --
 ALTER TABLE `auth`
-  MODIFY `auth_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `auth_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT for table `depts`
 --
 ALTER TABLE `depts`
-  MODIFY `dept_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
+  MODIFY `dept_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42;
+
+--
+-- AUTO_INCREMENT for table `mail_log`
+--
+ALTER TABLE `mail_log`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
 
 --
 -- AUTO_INCREMENT for table `otps`
 --
 ALTER TABLE `otps`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

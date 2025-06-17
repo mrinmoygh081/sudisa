@@ -13,7 +13,7 @@ var cron = require("node-cron");
 const { mailController } = require("../controllers/mailControllers");
 
 const cronJobStart = () => {
-  cron.schedule(" */15  * * * *", () => {
+  cron.schedule(" */15 * * * * *", () => {
     console.log("Running a task every 15 Minutes");
     mailController();
   });
